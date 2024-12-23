@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chapter 10: Advanced Forms</title>
+  </head>
+  <body>
+    <h1>Chapter 10: Advanced Forms</h1>
+    <!-- Grouping Inputs with <fieldset> and <legend>
+    The <fieldset> tag is used to group related form elements,
+     making the form easier to navigate. The <legend> tag provides a caption for the group. -->
+
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </fieldset>
+    </form>
+
+    <!-- Autocomplete
+    The autocomplete attribute suggests previously entered values for input fields. -->
+    <form>
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        autocomplete="on"
+      /><br /><br />
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" autocomplete="off" />
+    </form>
+
+    <!-- Placeholder
+        The placeholder attribute provides a short hint inside the input field. -->
+    <input type="text" placeholder="Enter your name" />
+
+    <!-- File Upload Forms and Restrictions
+        The <input type="file"> element allows users to upload files. 
+        Restrictions can be applied using the accept and multiple attributes. -->
+    <form>
+      <label for="profile">Upload Profile Picture:</label>
+      <input
+        type="file"
+        id="profile"
+        name="profile"
+        accept="image/*"
+      /><br /><br />
+
+      <label for="documents">Upload Documents:</label>
+      <input
+        type="file"
+        id="documents"
+        name="documents"
+        accept=".pdf,.docx"
+        multiple
+      />
+
+      <!-- HTML5 introduced several new input types to enhance forms.
+
+        Input Type	Description	Example
+        date	Date picker with a calendar UI.	<input type="date">
+        range	Slider for numeric range.	<input type="range" min="1" max="100">
+        color	Color picker.	<input type="color"> -->
+
+      <form>
+        <label for="birthday">Select your birthday:</label>
+        <input type="date" id="birthday" name="birthday" /><br /><br />
+
+        <label for="volume">Set the volume level:</label>
+        <input
+          type="range"
+          id="volume"
+          name="volume"
+          min="1"
+          max="10"
+        /><br /><br />
+
+        <label for="favcolor">Pick your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" />
+      </form>
+    </form>
+  </body>
+</html>
