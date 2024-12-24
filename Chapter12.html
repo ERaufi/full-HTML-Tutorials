@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chapter 12: Dialog</title>
+  </head>
+  <body>
+    <h1>Chapter 12: Dialog</h1>
+
+    <dialog id="dialog1">
+      <h2>Modal Dialog</h2>
+      <p>
+        This is a modal dialog. you cannot interact with the rest of the page.
+      </p>
+
+      <button onclick="document.getElementById('dialog1').close()">
+        Close
+      </button>
+    </dialog>
+
+    <button onclick="document.getElementById('dialog1').showModal()">
+      Open Modal
+    </button>
+
+    <dialog id="nonModal">
+      <p>This is a non-modal dialog.</p>
+
+      <button onclick="document.getElementById('nonModal').close()">
+        Close
+      </button>
+    </dialog>
+
+    <button onclick="document.getElementById('nonModal').show()">
+      Open non-modal dialog
+    </button>
+  </body>
+</html>
