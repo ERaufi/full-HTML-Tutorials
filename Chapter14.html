@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chapter 14: Styles in HTML</title>
+    <style>
+      /* Tag selector: Applies to all <h1> elements */
+      h1 {
+        color: darkblue;
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      /* Class selector: Reusable for multiple elements */
+      .highlight {
+        background-color: yellow;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        color: black;
+      }
+
+      /* ID selector: Unique for a specific element */
+      #footer {
+        text-align: center;
+        font-size: 14px;
+        color: gray;
+        border-top: 1px solid lightgray;
+        margin-top: 20px;
+        padding: 10px;
+      }
+
+      /* Tag selector: Applies to all <p> elements */
+      p {
+        color: darkgreen;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      /* Class selector for styling boxes */
+      .box {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 8px;
+      }
+
+      /* Tag selector: Applies to all <ul> and <li> elements */
+      ul {
+        list-style-type: square;
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+
+      li {
+        font-size: 16px;
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chapter 14: Styles in HTML</h1>
+
+    <!-- Paragraph with default styles from <p> tag selector -->
+    <p>
+      This is a paragraph styled with the default <strong>paragraph</strong> tag
+      selector.
+    </p>
+
+    <!-- Highlighted paragraph using a class -->
+    <p class="highlight">
+      This is a highlighted paragraph using the "highlight" class.
+    </p>
+
+    <!-- Box styled with the "box" class -->
+    <div class="box">
+      <p>
+        This is content inside a styled box. You can reuse the "box" class for
+        similar containers.
+      </p>
+    </div>
+
+    <!-- Unordered list styled with tag selectors -->
+    <ul>
+      <li>
+        Item 1: Styled using the <code>ul</code> and <code>li</code> tag
+        selectors.
+      </li>
+      <li>Item 2: Includes customized spacing and font size.</li>
+      <li>Item 3: Uses a square marker as the bullet style.</li>
+    </ul>
+
+    <!-- Inline styles for quick modifications -->
+    <p style="font-style: italic; border: 1px solid black; padding: 10px">
+      This paragraph uses inline styles for a border and italics.
+    </p>
+
+    <!-- Footer Section -->
+    <footer id="footer">© 2024 HTML Styles Tutorial</footer>
+  </body>
+</html>
